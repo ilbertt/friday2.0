@@ -1,4 +1,4 @@
-# new-friday
+# friday 2.0
 La repo per il nuovo Friday, la nuova IA.
 
 #il programma
