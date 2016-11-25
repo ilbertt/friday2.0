@@ -6,8 +6,8 @@ import json
 '''
 funzione: calcola la prob. che el sia legato al succ.
    k=spazio degli eventi,
-   p_0=prob già nel db,
-   check=se è la prima volta che si calcola la prob.
+   p_0=prob. gia' nel db,
+   check=se e' la prima volta che si calcola la prob.
 '''
 def prob(p_0,k,check): #funzione
     if check == 1:
@@ -26,31 +26,31 @@ with open("output.json") as out:
     
 words = re.sub("[^\w]", " ",  data).split() #so we match any non alphanumeric character and replace it with a space
 
-print (words,len(words))
-#user_input = input("Scrivi qualcosa: ") #può servire...
+#print (words,len(words)) debug...
+#user_input = input("Scrivi qualcosa: ") #puo' servire...
 x = 0
 
 while (x < len(words)-1):
     el = words[x].lower()
     print (el)
     if el != ',' or el != ';': #escludi , e ;
-        p_w_s = 0 #probailità iniziale
+        p_w_s = 0 #probailita' iniziale
         k = 0 #spazio degli eventi iniziale
         
         el_array = {}
         check = 0
 
-        if el in result: #se c'è la parola nel DB
+        if el in result: #se c'e' la parola nel DB
             el_array = result[el]
             k = result[el]['k']
 
         s_id = x + 1
         s_el = words[s_id].lower()
         #print (x,s_id,s_el) #debug...
-        if s_el in el_array: #se c'è el. succ. nel ramo di el. nel DB
+        if s_el in el_array: #se c'e' el. succ. nel ramo di el. nel DB
             p_w_s = result[el][s_el] #prob. che el corrente sia legato al succ. dal DB
             check = 1
-        p_w_s_def = prob(p_w_s,k,check) #probabilità
+        p_w_s_def = prob(p_w_s,k,check) #probabilita'
         print (s_el,p_w_s_def)
         if el in result:
             for p_el in result[el]:
