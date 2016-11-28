@@ -25,4 +25,4 @@ Si ha questo database in output (dove <code>'k'</code> è il numero totale di vo
 Il training è fondamentale per Friday 2.0, in quanto affina le probabilità nel suo db. Pertanto si cercano tanti testi (milioni e milioni :)) corretti che possano essere analizzati dal programma.
 
 #Gli autori
-<p>Gli autori che lavorano al progetto sono <a href="https://github.com/ccol168" class="user-mention">@ccol168</a>, <a href="https://github.com/guest928" class="user-mention">@guest928</a>, <a href="https://github.com/tancre99" class="user-mention">@tancre99</a>.</p>
+<p>Gli autori che lavorano al progetto sono <a href="https://github.com/ccol168" class="user-mention">@ccol168</a>, <a href="https://github.com/guest928" class="user-mention">@guest928</a>, <a href="https://github.com/tancre99" class="user-mention">@tancre99</a>, <a href="https://github.com/elbollins" class="user-mention">@elbollins</a>.</p>
